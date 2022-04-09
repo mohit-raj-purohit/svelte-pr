@@ -30,6 +30,6 @@
 
 <Header />
 
-<main>
+<main >
 	<slot />
 </main>
