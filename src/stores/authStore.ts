@@ -5,10 +5,10 @@ import type { UserInfo } from "firebase/app";
 const authStore = writable<{
     isLoggedIn: boolean,
     user?: UserInfo,
-    firebaseController: boolean,
+    firebaseControlled: boolean,
 }>({
     isLoggedIn: false,
-    firebaseController: false
+    firebaseControlled: false
 });
 
 export default {
