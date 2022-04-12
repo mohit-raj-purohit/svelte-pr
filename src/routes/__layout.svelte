@@ -43,7 +43,7 @@
 				firebaseControlled: true
 			});
 
-			$: if ( $authStore.isLoggedIn ) {
+			if ( $authStore.isLoggedIn ) {
 				getTeams(db, teams);
 			} else {
 				teamsStore.set({
